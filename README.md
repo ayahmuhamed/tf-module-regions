@@ -39,28 +39,13 @@ cd tf-module-regions
 terraform init
 ```
 
-_sample_:
 
-```
-terraform init
-
-```
 
 * Apply:
 
 ```
 terraform apply
 ```
-
-_sample_:
-
-```
-terraform apply
-
-Terraform used the selected providers to generate the following execution plan. Resource actions are indicated with the following symbols:
-  + create
-
-Terraform will perform the following actions:
 
 
 
@@ -75,21 +60,11 @@ aws ec2 describe-security-groups --filter --group-ids $(terraform output -raw ce
 aws ec2 describe-security-groups --filter --group-ids $(terraform output -raw north-sg-id) --region=eu-north-1
 ```
 
-_sample_:
 
-```
-
-```
 
 ### Cleanup
 
 ```
 terraform destroy
-```
-
-_sample_:
-
-```
-
 ```
 
