@@ -16,7 +16,7 @@ module "ec2-instance-central" {
 }
 
 module "ec2-instance-north" {
-  source = "github.com/ayahmuhamed//sg-aws"
+  source = "github.com/ayahmuhamed/sg-aws"
   providers = {
     aws = aws.north
   }
